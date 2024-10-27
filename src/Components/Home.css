@@ -1,0 +1,38 @@
+/* src/components/Home.css */
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh; /* Adjust height of the container */
+    background-color: #f0e5cf;
+    text-align: center;
+    overflow: hidden; /* Ensures smooth animation across the screen */
+  }
+  
+  .home-title {
+    color: #e76f51; /* Set desired color */
+    font-size: 3rem; /* Increase font size */
+    padding: 20px 40px; /* Add padding for height */
+    background-color: rgba(42, 157, 143, 0.9); /* Background color for the title box */
+    border-radius: 15px; /* Rounded corners for the title box */
+    animation: moveText 10s linear infinite; /* Apply moving animation */
+    transition: transform 0.5s ease; /* Transition effect for hover */
+  }
+  
+  /* Keyframes for moving animation */
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move fully to the left */
+    }
+  }
+  
+  /* Adding hover effect */
+  .home-title:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+  }

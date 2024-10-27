@@ -1,0 +1,12 @@
+/* src/components/PostDetail.css */
+.model-details {
+    background-color: #264653;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .model-details h2 {
+    font-size: 28px;
+    color: #e9c46a;
+  }

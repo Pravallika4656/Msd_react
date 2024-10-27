@@ -1,0 +1,58 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  background-color: #2a9d8f;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #f4a261;
+}
+
+/* Existing content styles */
+.content {
+  padding: 20px;
+  background-color: rgb(193, 219, 215);
+  height: 600px;
+}
+
+/* New home content styles */
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px; /* Reduced font size */
+  color: #264653; /* Text color */
+  overflow: hidden; /* Hide overflow */
+  position: relative;
+}
+
+/* Animation effect */
+.home-content h1 {
+  position: absolute;
+  white-space: nowrap;
+  animation: moveText 10s linear infinite;
+}
+
+/* Keyframes for moving animation */
+@keyframes moveText {
+  0% {
+    transform: translateX(100vw); /* Start from the right edge of the viewport */
+  }
+  100% {
+    transform: translateX(-100vw); /* Move fully to the left edge of the viewport */
+  }
+}

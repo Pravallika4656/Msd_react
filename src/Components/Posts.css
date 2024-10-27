@@ -1,0 +1,58 @@
+/* src/components/Posts.css */
+
+.models-container {
+    background-color: #264653; /* Dark background */
+    padding: 30px;
+    border-radius: 10px;
+    color: #e9c46a; /* Yellowish text color */
+    max-width: 1600px; /* Restrict width for even distribution */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #f4a261;
+    margin-bottom: 20px;
+  }
+  
+  .models-list {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr)); /* Equal-sized columns */
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Center the grid within the container */
+    box-sizing: border-box;
+  }
+  
+  .model-item {
+    background-color: #2a9d8f; /* Teal color for boxes */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: white;
+    font-size: 16px;
+    min-height: 100px; /* Set a minimum height for consistent box size */
+    box-sizing: border-box;
+  }
+  
+  .model-item:hover {
+    transform: scale(1.05);
+    background-color: #1d7874; /* Darker teal on hover */
+  }
+  
+  .model-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .model-link:hover {
+    color: #e9c46a; /* Yellowish color on hover */
+  }
